@@ -1,0 +1,20 @@
+{
+  "provider": "ollama",
+  "providers": {
+    "ollama": {
+      "model": "qwen3:8b",
+      "api_base": "http://127.0.0.1:11434/v1",
+      "api_key": "ollama"
+    },
+    "deepseek": {
+      "model": "deepseek-chat",
+      "api_base": "https://api.deepseek.com/v1",
+      "api_key": ""
+    }
+  },
+  "comfyui_url": "http://127.0.0.1:8188",
+  "cosyvoice_url": "http://127.0.0.1:50002",
+  "workspace": "outputs",
+  "max_steps": 6,
+  "timeout": 300
+}
