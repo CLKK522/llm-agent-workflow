@@ -43,6 +43,8 @@ ollama ps
 
 修改后重启 Ollama 服务。实测显存占用约 5.6GB，生成速度约 20 tok/s。
 
+> 8GB 卡上，本地 Qwen3 与 ComfyUI 同时加载很容易 OOM。跑完整多模态链路时建议用 DeepSeek API 做编排，本地显存留给 ComfyUI / CosyVoice；如果坚持全本地，请在调用出图工具前执行 `ollama stop qwen3:8b`。
+
 ### 使用 DeepSeek API（可选）
 
 ```powershell
